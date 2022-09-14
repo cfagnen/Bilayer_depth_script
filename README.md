@@ -12,6 +12,7 @@ The process for determining the depth of the membrane is divided into two script
 -depth_script.py : a python3 script computing the depths of the upper and lower leaflets.
 
 Required:
+---------
 
 - FATSLiM (Fast Analysis Toolbox for Simulations of Lipid Membranes)
   (https://pythonhosted.org/fatslim/index.html)
@@ -25,6 +26,7 @@ Required:
 
 
 Before to begin:
+----------------
 
 The scripts need the frames composed of all the membrane atoms (only membrane) located in a directory called frames.
 The scripts also need the definition of the membrane in a ndx file called all_membrane.ndx.
@@ -79,6 +81,7 @@ Removed group 7 'DPSM'
 
 
 command_fatslim.sh
+------------------
 
 
 This script attributes a leaflet to each lipid.
@@ -122,6 +125,7 @@ Three files are created to check that fatslim works well:
 
 
 depth_script.py (Python3)
+-------------------------
 
 This script:
 - assigns a leaflet to the unassigned atoms (the same than the closest atom assigned to a leaflet with fatslim),

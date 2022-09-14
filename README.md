@@ -1,6 +1,5 @@
-#README#
+README
 
-########
 Available at https://github.com/cfagnen/Bilayer_depth_script
 Author: Charline Fagnen
 These scripts compute the depth of the two leaflets of a bilayer.
@@ -13,7 +12,7 @@ The process for determining the depth of the membrane is divided into two script
 -depth_script.py : a python3 script computing the depths of the upper and lower leaflets.
 
 Required:
-##########
+
 - FATSLiM (Fast Analysis Toolbox for Simulations of Lipid Membranes)
   (https://pythonhosted.org/fatslim/index.html)
   S. Buchoux. FATSLiM: a fast and robust software to analyze MD simulations of membranes. Bioinformatics. (2017), doi:10.1093/bioinformatics/btw563 . 
@@ -26,7 +25,7 @@ Required:
 
 
 Before to begin:
-################
+
 The scripts need the frames composed of all the membrane atoms (only membrane) located in a directory called frames.
 The scripts also need the definition of the membrane in a ndx file called all_membrane.ndx.
 
@@ -80,7 +79,7 @@ Removed group 7 'DPSM'
 
 
 command_fatslim.sh
-##################
+
 
 This script attributes a leaflet to each lipid.
 If the original cutoff value does not help to distinguish the leaflets, the cutoff will be incremented by 0.1 until it reaches the cutoff_max.
@@ -123,7 +122,7 @@ Three files are created to check that fatslim works well:
 
 
 depth_script.py (Python3)
-##########################
+
 This script:
 - assigns a leaflet to the unassigned atoms (the same than the closest atom assigned to a leaflet with fatslim),
 - computes the depth of the upper and the lower leaflets.

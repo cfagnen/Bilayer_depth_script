@@ -2,8 +2,11 @@ README
 ---------
 
 Available at https://github.com/cfagnen/Bilayer_depth_script
-Author: Charline Fagnen
+
+Author: Charline Fagnen.
+
 These scripts compute the depth of the two leaflets of a bilayer.
+
 The script command_fatslim.sh is based on the Fatslim tool developed by S. Buchoux. (https://github.com/FATSLiM/fatslim)
 The script depth_script.py is inspired by the one written by J. Chong (https://github.com/jiehanchong/membrane-depth-analysis) 
 
